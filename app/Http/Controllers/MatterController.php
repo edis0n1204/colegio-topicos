@@ -13,7 +13,7 @@ class MatterController extends Controller
      */
     public function index()
     {
-        //
+        return view('matters.index');
     }
 
     /**
