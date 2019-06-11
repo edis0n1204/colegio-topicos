@@ -85,5 +85,28 @@
             @yield('content')
         </main>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBSpEYIKxmmthKzghPx855O00zdVdHkvkg",
+    authDomain: "colegio-11ba0.firebaseapp.com",
+    databaseURL: "https://colegio-11ba0.firebaseio.com",
+    projectId: "colegio-11ba0",
+    storageBucket: "colegio-11ba0.appspot.com",
+    messagingSenderId: "253069073367",
+    appId: "1:253069073367:web:83eda6001a21612d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+    @yield('scripts')
 </body>
 </html>

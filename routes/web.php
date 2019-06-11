@@ -20,4 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('parents', 'ParentController');
 Route::resource('courses', 'CourseController');
+Route::get('licencia/{id}', 'CourseController@licencia')->name('licencia');
+Route::get('guardar_asistencia', 'CourseController@guardar_asistencia')->name('guardar_asistencia');
 Route::resource('matters', 'MatterController');
